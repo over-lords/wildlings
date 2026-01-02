@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlings</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            background: linear-gradient(145deg, #111827, #1f2937);
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+    </style>
+</head>
+<body>
+    <main id="app"></main>
+    <script type="module">
+        import { wildlings } from './entries.js';
+        import { renderCard } from './renderer.js';
+
+        const app = document.getElementById('app');
+        wildlings.forEach((entry) => {
+            const card = renderCard(entry);
+            app.appendChild(card);
+        });
+    </script>
+</body>
+</html>
