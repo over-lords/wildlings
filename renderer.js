@@ -180,7 +180,7 @@ const ensureStyles = () => {
             border-radius: 12px;
             background: #e0e0e0;
             padding: 8px 10px;
-            font-size: 13px;
+            font-size: 11.8px;
             line-height: 1.4;
             color: #0a0a0a;
             min-height: 60px;
